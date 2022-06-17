@@ -1,5 +1,5 @@
 name: '@simatic-ax/generators'
-version: 0.0.0
+version: 0.0.1
 type: lib
 variables:
   APAX_BUILD_ARGS:

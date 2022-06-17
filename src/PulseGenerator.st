@@ -1,8 +1,15 @@
 USING System.Timer;
 USING Simatic.Ax.IO.Input;
 
-NAMESPACE Simatix.Ax.Generators
+NAMESPACE Simatic.Ax.Generators
+
     CLASS PulseGenerator
+
+        
+        VAR PUBLIC
+            PulseTime : LTIME := T#1s;  // Pulse duration
+            PauseTime : LTIME := T#1s;  // Pause duration ( PulseTime + PauseTime = Period )
+        END_VAR
 
         VAR PRIVATE
             _timePulse : OnDelay;
@@ -12,41 +19,46 @@ NAMESPACE Simatix.Ax.Generators
             _signal : BinSignal;
         END_VAR
 
+        
+        {axcode:docs-v0:generators:PulseGenerator.md}
+        // execute the clock signal. Must called cycically 
         METHOD PUBLIC Execute
-            VAR_INPUT
-                pulse : LTIME;
-                pause : LTIME;
-            END_VAR
-
+            
             _timePulse();
             _timePause();
-            _signal.ReadCyclic(signal := _internalTimerStatus);
 
-            IF (_timePause.output OR not(_timerIsRunning)) THEN
-    
-                _timePulse(signal := TRUE, duration := pulse);
+            // evaluate pulse signal
+            IF (_timePause.output OR NOT(_timerIsRunning)) THEN
+                _timePulse(signal := TRUE, duration := PulseTime);
                 _timePause(signal := FALSE);
                 _timerIsRunning := TRUE;
                 _internalTimerStatus := TRUE;
             END_IF;
 
-            if (_timePulse.output ) then 
-                _timePause(signal := TRUE, duration := pause);
+            // evaluate a pause signal
+            IF (_timePulse.output ) THEN 
+                _timePause(signal := TRUE, duration := PauseTime);
                 _timePulse(signal := FALSE);
                 _internalTimerStatus := FALSE;
-            End_if;            
+            END_IF;      
+            
+            _signal.ReadCyclic(signal := _internalTimerStatus);
+
         END_METHOD
-        
-        METHOD PUBLIC Q : BOOL
-            Q := _signal.Q();         
+                
+        // returns the clock signal
+        METHOD PUBLIC Clock : BOOL
+            Clock := _signal.Q();         
         END_METHOD
 
-        METHOD PUBLIC QRis : BOOL
-            QRis := _signal.QRis();
+        // returns the rising edge of the clock signal
+        METHOD PUBLIC ClockRis : BOOL
+            ClockRis := _signal.QRis();
         END_METHOD
 
-        METHOD PUBLIC QFal : BOOL
-            QFal := _signal.QFal();
+        // returns the falling edge of the clock signal
+        METHOD PUBLIC ClockFal : BOOL
+            ClockFal := _signal.QFal();
         END_METHOD
 
     END_CLASS

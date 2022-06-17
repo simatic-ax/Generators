@@ -1,4 +1,4 @@
-# @simatic-ax.<Library>
+# @simatic-ax.generators
 
 ## Description
 
@@ -6,19 +6,18 @@
 
 Enter:
 ```cli
-apax add @simatic-ax/<Library>
+apax add @simatic-ax/generators
 ```
 
 ## Namespace
 ```
-Simatic.Ax.<Library>;
+Simatic.Ax.Generators;
 ```
 
-## Objects
+## Classes
 
-## Example
-
-<please provide a working example>
+Available classes 
+[PulseGenerator](docs/PulseGenerator.md)
 
 ## Contribution
 
