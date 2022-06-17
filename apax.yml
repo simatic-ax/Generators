@@ -1,0 +1,31 @@
+name: generators
+version: 0.0.0
+type: lib
+variables:
+  APAX_BUILD_ARGS:
+    - '--log Trace'
+    - '--simulation'
+    - '--debug'
+targets:
+  - 'axunit-llvm'
+scripts:
+  publishpackage:
+    - apax publish --package *.apax.tgz --registry 'https://npm.pkg.github.com/'
+    - rm *.apax.tgz -f
+  createpackage:
+    - apax build
+    - apax test
+    - apax version $1
+    - apax pack
+    # - apax publishlib
+devDependencies:
+  '@ax/sdk': 1.0.144
+  "@simatic-ax/snippetscollection": 0.0.6
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
+files:
+  - 'README.md'
+  - 'LICENSE.md'
+  - 'doc'
+  - 'src'
+  - 'snippets'
