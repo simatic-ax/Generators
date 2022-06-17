@@ -1,5 +1,5 @@
 name: '@simatic-ax/generators'
-version: 0.0.1
+version: 0.0.2
 type: lib
 variables:
   APAX_BUILD_ARGS:
@@ -25,7 +25,7 @@ registries:
 files:
   - 'README.md'
   - 'LICENSE.md'
-  - 'doc'
+  - 'docs'
   - 'src'
   - 'snippets'
 dependencies:
