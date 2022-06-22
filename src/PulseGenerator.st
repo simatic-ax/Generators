@@ -2,7 +2,7 @@ USING System.Timer;
 USING Simatic.Ax.IO.Input;
 
 NAMESPACE Simatic.Ax.Generators
-
+    {axcode:docs-v0:@simatic-ax/generators:PulseGenerator.md}
     CLASS PulseGenerator
 
         
@@ -20,8 +20,7 @@ NAMESPACE Simatic.Ax.Generators
         END_VAR
 
         
-        {axcode:docs-v0:generators:PulseGenerator.md}
-        // execute the clock signal. Must called cycically 
+        /// Execute(): Cyclically called method
         METHOD PUBLIC Execute
             
             _timePulse();
@@ -46,17 +45,17 @@ NAMESPACE Simatic.Ax.Generators
 
         END_METHOD
                 
-        // returns the clock signal
+        /// Returns the clock signal
         METHOD PUBLIC Clock : BOOL
             Clock := _signal.Q();         
         END_METHOD
 
-        // returns the rising edge of the clock signal
+        /// Returns the rising edge of the clock signal
         METHOD PUBLIC ClockRis : BOOL
             ClockRis := _signal.QRis();
         END_METHOD
 
-        // returns the falling edge of the clock signal
+        /// Returns the falling edge of the clock signal
         METHOD PUBLIC ClockFal : BOOL
             ClockFal := _signal.QFal();
         END_METHOD
