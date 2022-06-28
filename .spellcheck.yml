@@ -12,5 +12,7 @@ matrix:
       - code
       - pre
   sources:
-  - '**/*.md'
+  - 'docs/**/*.md'
+  - 'README.md'
+  - 'changelog.md'
   default_encoding: utf-8
