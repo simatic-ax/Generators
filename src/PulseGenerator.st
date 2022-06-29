@@ -4,8 +4,6 @@ USING Simatic.Ax.IO.Input;
 NAMESPACE Simatic.Ax.Generators
     {axcode:docs-v0:@simatic-ax/generators:PulseGenerator.md}
     CLASS PulseGenerator
-
-        
         VAR PUBLIC
             PulseTime : LTIME := T#1s;  // Pulse duration
             PauseTime : LTIME := T#1s;  // Pause duration ( PulseTime + PauseTime = Period )
@@ -19,7 +17,6 @@ NAMESPACE Simatic.Ax.Generators
             _signal : BinSignal;
         END_VAR
 
-        
         /// Execute(): Cyclically called method
         METHOD PUBLIC Execute
             

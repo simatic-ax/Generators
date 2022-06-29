@@ -506,6 +506,14 @@
       "@ax/system-timer": "1.0.12"
     }
   },
+  "@simatic-ax/mocks": {
+    "version": "0.1.3",
+    "resolved": "https://npm.pkg.github.com/download/@simatic-ax/mocks/0.1.3/71b544f80f4e11e1a77fb8342a8e68ba63aab0c3f960fcbc306b557f1d167449",
+    "integrity": "sha512-oQdok2PtnxiTjgNeleK3xaOrcs2nIaemtfcpKOIaiqSvuPgNQlD0hgei26qBHj4hnct9P36PUPS1xsDflopt2A==",
+    "dependencies": {
+      "@ax/system-timer": "1.1.16"
+    }
+  },
   "@simatic-ax/snippetscollection": {
     "version": "0.0.13",
     "resolved": "https://npm.pkg.github.com/download/@simatic-ax/snippetscollection/0.0.13/af983a348ba48294e021231565500f9f5fd45ffc4eb3958f81db152fcc711abc",
