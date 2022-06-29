@@ -1,0 +1,2 @@
+aspell:
+    ignore-case: true

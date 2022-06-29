@@ -1,0 +1,12 @@
+on: push
+
+jobs:
+  spellchecking:
+    name: "spell checker for all md files"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: rojopolis/spellcheck-github-actions@0.24.0
+      name: Spellcheck
+      with:
+        output_file: spellcheck-output.txt

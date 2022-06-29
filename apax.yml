@@ -1,5 +1,5 @@
 name: '@simatic-ax/generators'
-version: 0.0.2
+version: 0.0.3
 type: lib
 variables:
   APAX_BUILD_ARGS:
@@ -18,8 +18,8 @@ scripts:
     - apax version $1
     - apax pack
 devDependencies:
-  '@ax/sdk': 1.0.165
-  "@simatic-ax/snippetscollection": 0.0.12
+  '@ax/sdk': 1.0.175
+  "@simatic-ax/snippetscollection": 0.0.13
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 files:
@@ -31,3 +31,4 @@ files:
 dependencies:
   "@simatic-ax/io": 0.1.2
   "@ax/system-timer": 1.1.16
+  "@simatic-ax/mocks": 0.1.3
