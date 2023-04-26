@@ -1,23 +1,26 @@
 # @simatic-ax.generators
 
 ## Description
+
 This library contains a collection of signal generators
 
 ## Install this package
 
 Enter:
+
 ```cli
 apax add @simatic-ax/generators
 ```
 
 ## Namespace
-```
+
+```iec-st
 Simatic.Ax.Generators;
 ```
 
 ## Classes
 
-Available classes 
+Available classes
 [PulseGenerator](docs/PulseGenerator.md)
 
 ## Contribution
