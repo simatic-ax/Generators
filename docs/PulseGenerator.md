@@ -2,7 +2,7 @@
 
 ## Description
 
-PulseGenerator class creates a pulse signal with a configurabel pulse pause duration
+PulseGenerator class creates a pulse signal with a configurable pulse pause duration
 
 ## Install this package
 

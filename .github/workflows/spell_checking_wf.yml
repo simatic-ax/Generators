@@ -6,7 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: rojopolis/spellcheck-github-actions@0.24.0
-      name: Spellcheck
-      with:
-        output_file: spellcheck-output.txt
+
+  repolinter-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: 'Run Repolinter'
+        uses: todogroup/repolinter-action@v1
+    # - uses: rojopolis/spellcheck-github-actions@0.24.0
+    #   name: Spellcheck
+    #   with:
+    #     output_file: spellcheck-output.txt
