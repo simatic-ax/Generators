@@ -1,34 +1,33 @@
+# General information
 name: '@simatic-ax/generators'
-version: 0.0.3
+version: 0.0.0-placeholder
 type: lib
+# Description will be displayed in the apax extension
+description: This library contains a collection of signal generators
+#URL to the repository
+repository:
+  type: git
+  url: https://github.com/simatic-ax/generators
+# Environment variables
 variables:
   APAX_BUILD_ARGS:
-    - '--log Trace'
-    - '--simulation'
     - '--debug'
 targets:
   - 'axunit-llvm'
-scripts:
-  publishpackage:
-    - apax publish --package *.apax.tgz --registry 'https://npm.pkg.github.com/'
-    - rm *.apax.tgz -f
-  createpackage:
-    - apax build
-    - apax test
-    - apax version $1
-    - apax pack
+  - 'plcsim'
 devDependencies:
-  '@ax/sdk': 3.0.12
+  "@ax/sdk": 3.0.18
   "@simatic-ax/snippetscollection": 0.0.15
-registries:
-  '@simatic-ax': 'https://npm.pkg.github.com/'
-files:
-  - 'README.md'
-  - 'LICENSE.md'
-  - 'docs'
-  - 'src'
-  - 'snippets'
 dependencies:
   "@simatic-ax/io": 1.0.1
   "@ax/system-timer": 3.0.9
-  # "@simatic-ax/mocks": 0.1.3
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
+# Files which 'apax pack' will include
+files:
+  - 'README.md'
+  - 'LICENSE.md'
+  - 'changelog.md'
+  - 'snippets'
+  - 'docs'
+  - 'src'

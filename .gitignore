@@ -2,4 +2,6 @@
 .env
 bin
 obj
-testresult
+TestResult
+*.tgz
+assets
