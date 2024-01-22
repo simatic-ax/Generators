@@ -16,7 +16,7 @@ targets:
   - 'axunit-llvm'
   - 'plcsim'
 devDependencies:
-  "@ax/sdk": 3.0.18
+  "@ax/sdk": 2311.0.1
   "@simatic-ax/snippetscollection": 0.0.15
 dependencies:
   "@simatic-ax/io": 1.0.1
