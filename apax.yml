@@ -20,7 +20,7 @@ devDependencies:
   "@simatic-ax/snippetscollection": 0.0.15
 dependencies:
   "@simatic-ax/io": 1.0.1
-  "@ax/system-timer": 3.0.9
+  "@ax/system-timer": 6.0.94
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 # Files which 'apax pack' will include
