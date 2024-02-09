@@ -13,7 +13,7 @@ variables:
   APAX_BUILD_ARGS:
     - '--debug'
 targets:
-  - 'axunit-llvm'
+  - 'llvm'
   - 'plcsim'
 devDependencies:
   "@ax/sdk": 2311.0.1
