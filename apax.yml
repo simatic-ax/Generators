@@ -13,13 +13,13 @@ variables:
   APAX_BUILD_ARGS:
     - '--debug'
 targets:
-  - 'axunit-llvm'
+  - 'llvm'
   - 'plcsim'
 devDependencies:
-  "@ax/sdk": 3.0.18
-  "@simatic-ax/snippetscollection": 0.0.15
+  "@ax/sdk": 2311.0.1
+  "@simatic-ax/snippetscollection": 1.0.0
 dependencies:
-  "@simatic-ax/io": 1.0.1
+  "@simatic-ax/io": 5.0.0
   "@ax/system-timer": 6.0.94
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
@@ -31,3 +31,5 @@ files:
   - 'snippets'
   - 'docs'
   - 'src'
+installStrategy: strict
+apaxVersion: 3.1.0
