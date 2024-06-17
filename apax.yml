@@ -8,21 +8,26 @@ description: This library contains a collection of signal generators
 repository:
   type: git
   url: https://github.com/simatic-ax/generators
+# Registry information, where the package will be published
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
 # Environment variables
 variables:
   APAX_BUILD_ARGS:
     - '--debug'
 targets:
+  - '1500'
   - 'llvm'
-  - 'plcsim'
+# Install settings
+installStrategy: strict
+apaxVersion: 3.2.1
+# Dependencies
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": 2405.0.0
   "@simatic-ax/snippetscollection": 1.0.0
 dependencies:
-  "@simatic-ax/io": 5.0.0
-  "@ax/system-timer": 6.0.94
-registries:
-  '@simatic-ax': 'https://npm.pkg.github.com/'
+  "@simatic-ax/io": 6.0.0
+  "@ax/system-timer": 7.0.17
 # Files which 'apax pack' will include
 files:
   - 'README.md'
@@ -30,6 +35,5 @@ files:
   - 'changelog.md'
   - 'snippets'
   - 'docs'
-  - 'src'
-installStrategy: strict
-apaxVersion: 3.1.0
+  - 'src' # ship library as src-files
+  # - 'bin'    # ship library as bin-files
