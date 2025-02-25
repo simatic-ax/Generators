@@ -29,7 +29,7 @@ devDependencies:
   "@simatic-ax/mocks": ^1.0.0
 dependencies:
   "@simatic-ax/io": 7.0.0
-  "@ax/system-timer": 8.0.7
+  "@ax/system-timer": 8.0.8
 # Files which 'apax pack' will include
 files:
   - 'README.md'
