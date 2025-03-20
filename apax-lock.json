@@ -13,7 +13,8 @@
     "devDependencies": {
       "@ax/sdk": "2411.1.0",
       "@simatic-ax/snippetscollection": "1.0.0",
-      "@ax/axunit-mocking": "^6.0.0"
+      "@ax/axunit-mocking": "^6.1.12",
+      "@simatic-ax/mocks": "^2.0.0"
     }
   },
   "packages": {
@@ -63,6 +64,16 @@
         "@ax/target-mocking": "6.1.12",
         "@ax/mocking-library": "6.1.12",
         "@ax/mocking-ls-contrib": "6.1.12"
+      }
+    },
+    "@simatic-ax/mocks": {
+      "name": "@simatic-ax/mocks",
+      "version": "2.0.0",
+      "integrity": "sha512-+TzW/wBM6+W/ctioSF+TCiGP/Q81Ck9H9bfnoR1Tdv8HketyBCRIVewwzvLmuuB4rcUgM1uJtO6NQGXKYz4HTg==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/mocks/2.0.0/29da144c4e0a3c07283a01bde96b91f16ae3086c",
+      "dependencies": {
+        "@ax/axunit-mocking": "^6.1.12",
+        "@ax/system-timer": "^8.0.8"
       }
     },
     "@simatic-ax/io": {
@@ -695,6 +706,32 @@
       ],
       "dependencies": {}
     },
+    "@ax/target-mocking-linux-x64": {
+      "name": "@ax/target-mocking-linux-x64",
+      "version": "6.1.12",
+      "integrity": "sha512-KKfUoODuj51Q8oTWqgmHy0CGAdG2ZJaiJvhBRfzbwRnfK+Ey80nAhwM4KH1/1brS3sp0lwVIN94pe8khKgD43A==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-linux-x64/-/target-mocking-linux-x64-6.1.12.tgz",
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "dependencies": {}
+    },
+    "@ax/target-mocking-win-x64": {
+      "name": "@ax/target-mocking-win-x64",
+      "version": "6.1.12",
+      "integrity": "sha512-B/v6F+lP2Y97kXTKAz17zy00VV7JiEeq/ruAKYTnnflXhJLP6kxjjUr1zIK0MVZf3DDsvWocvBHqJ69h+OUorg==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-win-x64/-/target-mocking-win-x64-6.1.12.tgz",
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "dependencies": {}
+    },
     "@ax/system-strings": {
       "name": "@ax/system-strings",
       "version": "8.0.8",
@@ -777,32 +814,6 @@
       "version": "8.0.8",
       "integrity": "sha512-p+FFvfnC9tLIb0hWXyx6PeJB7bkTGfi2NDfS9qnJkoKDsxAGxEzXmBuOH8zPHMD4A9wIUGbjwS0zaNxCs4nSeA==",
       "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-conversion/-/system-conversion-8.0.8.tgz",
-      "dependencies": {}
-    },
-    "@ax/target-mocking-linux-x64": {
-      "name": "@ax/target-mocking-linux-x64",
-      "version": "6.1.12",
-      "integrity": "sha512-KKfUoODuj51Q8oTWqgmHy0CGAdG2ZJaiJvhBRfzbwRnfK+Ey80nAhwM4KH1/1brS3sp0lwVIN94pe8khKgD43A==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-linux-x64/-/target-mocking-linux-x64-6.1.12.tgz",
-      "os": [
-        "linux"
-      ],
-      "cpu": [
-        "x64"
-      ],
-      "dependencies": {}
-    },
-    "@ax/target-mocking-win-x64": {
-      "name": "@ax/target-mocking-win-x64",
-      "version": "6.1.12",
-      "integrity": "sha512-B/v6F+lP2Y97kXTKAz17zy00VV7JiEeq/ruAKYTnnflXhJLP6kxjjUr1zIK0MVZf3DDsvWocvBHqJ69h+OUorg==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-win-x64/-/target-mocking-win-x64-6.1.12.tgz",
-      "os": [
-        "win32"
-      ],
-      "cpu": [
-        "x64"
-      ],
       "dependencies": {}
     }
   },
