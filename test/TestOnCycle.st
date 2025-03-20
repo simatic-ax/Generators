@@ -23,34 +23,34 @@
 
 //             AxUnit.Mocking.Mock('System.Timer.OnDelay', NAME_OF(OnDelayMock2Timer), THIS._state); 
 //             testInstance.Execute();
-//             res := testInstance.Clock();
+//             res := testInstance.Q();
 //             AxUnit.Assert.Equal(TRUE, res);
             
 //             // second cycle --> Clock returns still true
 //             testInstance.Execute();
 
-//             res := testInstance.Clock();
+//             res := testInstance.Q();
 //             AxUnit.Assert.Equal(TRUE, res);
 
 //             // third cycle --> PulseTime has elapsed --> Clock returns false
 //             _state.StatusTimer1 := TRUE;
 //             _state.StatusTimer2 := FALSE;
 //             testInstance.Execute();
-//             res := testInstance.Clock();
+//             res := testInstance.Q();
 //             AxUnit.Assert.Equal(FALSE, res);
             
 //             // 4th Cycle  --> Clock returns still false. PauseTimer is running but is not elapsed
 //             _state.StatusTimer1 := FALSE;
 //             _state.StatusTimer2 := FALSE; 
 //             testInstance.Execute();
-//             res := testInstance.Clock();
+//             res := testInstance.Q();
 //             AxUnit.Assert.Equal(FALSE, res);
 
 //             // 5th cycle --> PauseTime has elapsed --> Clock returns false
 //             _state.StatusTimer1 := FALSE;
 //             _state.StatusTimer2 := TRUE;
 //             testInstance.Execute();
-//             res := testInstance.Clock();
+//             res := testInstance.Q();
 //             AxUnit.Assert.Equal(TRUE, res);
 //         END_METHOD
     
