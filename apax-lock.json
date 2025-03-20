@@ -12,7 +12,9 @@
     },
     "devDependencies": {
       "@ax/sdk": "2405.0.0",
-      "@simatic-ax/snippetscollection": "1.0.0"
+      "@simatic-ax/snippetscollection": "1.0.0",
+      "@ax/axunit-mocking": "^5.2.4",
+      "@simatic-ax/mocks": "^1.0.0"
     }
   },
   "packages": {
@@ -50,6 +52,27 @@
       "resolved": "https://npm.pkg.github.com/download/@simatic-ax/snippetscollection/1.0.0/60302d7e0da15a914ce0126503398063a42e1917",
       "dependencies": {}
     },
+    "@ax/axunit-mocking": {
+      "name": "@ax/axunit-mocking",
+      "version": "5.2.6",
+      "integrity": "sha512-E7nMypLkhPm6H2C1SZ4C0pq8VsNfU3l48ZWOILyzsFGCOOad/WN44EJCQnAveCEi1stv+opp6cLGQZYkAw/dOA==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/axunit-mocking/-/axunit-mocking-5.2.6.tgz",
+      "dependencies": {
+        "@ax/target-mocking": "5.2.6",
+        "@ax/mocking-library": "5.2.6",
+        "@ax/mocking-ls-contrib": "5.2.6"
+      }
+    },
+    "@simatic-ax/mocks": {
+      "name": "@simatic-ax/mocks",
+      "version": "1.0.0",
+      "integrity": "sha512-uo3ESjkrpS2SRq//mHJe5GurvN0WyCrxs5tGQ58KSnMEC9GY838XeZfqfiqD6Wbja+l0Vk4tf3+098dh4acs3w==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/mocks/1.0.0/ba38bd5e382b7f7e41668a550db02c85342c5a53",
+      "dependencies": {
+        "@ax/axunit-mocking": "^5.2.6",
+        "@ax/system-timer": "^7.0.17"
+      }
+    },
     "@simatic-ax/io": {
       "name": "@simatic-ax/io",
       "version": "6.0.0",
@@ -86,7 +109,8 @@
         "@ax/axunitst-test-director": "5.0.74",
         "@ax/axunitst-docs": "5.0.74",
         "@ax/build-native": "16.0.3"
-      }
+      },
+      "deprecated": ""
     },
     "@ax/axunitst-ls-contrib": {
       "name": "@ax/axunitst-ls-contrib",
@@ -252,6 +276,30 @@
         "@ax/trace-linux-x64": "2.7.2"
       }
     },
+    "@ax/target-mocking": {
+      "name": "@ax/target-mocking",
+      "version": "5.2.6",
+      "integrity": "sha512-QQVGWXy2nrSRntFMsHsJJu44vgBrVRcDjzAb8M4+zIWbBBP5Bb8wX6z3iTKm+FuU3b98NSh15py5gUBKjDlrIg==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking/-/target-mocking-5.2.6.tgz",
+      "dependencies": {
+        "@ax/target-mocking-linux-x64": "5.2.6",
+        "@ax/target-mocking-win-x64": "5.2.6"
+      }
+    },
+    "@ax/mocking-library": {
+      "name": "@ax/mocking-library",
+      "version": "5.2.6",
+      "integrity": "sha512-FyrlL+oTFpJ/BX1LETskUbVEhIBpVLBxvLKU4kpndzT7u1TrnakOB1Pcc9XmwUHtg019S82oA2AZYphsI+ecvw==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/mocking-library/-/mocking-library-5.2.6.tgz",
+      "dependencies": {}
+    },
+    "@ax/mocking-ls-contrib": {
+      "name": "@ax/mocking-ls-contrib",
+      "version": "5.2.6",
+      "integrity": "sha512-ZCvt1CG8RPc3lSTz0uu0r86HNBEDbutkovBpnGDz8/cjpTjhutuU2r5cAqaOYrkEeoWJx1yj6eB4YbGkyYwcMQ==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/mocking-ls-contrib/-/mocking-ls-contrib-5.2.6.tgz",
+      "dependencies": {}
+    },
     "@ax/simatic-package-tool": {
       "name": "@ax/simatic-package-tool",
       "version": "1.0.3",
@@ -290,7 +338,8 @@
       "version": "5.0.74",
       "integrity": "sha512-QitNPL5avajAf8U4w8QlZnFaHev1ohxnKe5t07/H00rDlczn3y4ofEhe3VLdqSNak49i7uwSzUiEf/y7dJLRNw==",
       "resolved": "https://registry.simatic-ax.siemens.io/@ax/axunitst-docs/-/axunitst-docs-5.0.74.tgz",
-      "dependencies": {}
+      "dependencies": {},
+      "deprecated": ""
     },
     "@ax/build-native": {
       "name": "@ax/build-native",
@@ -644,6 +693,32 @@
       ],
       "dependencies": {}
     },
+    "@ax/target-mocking-linux-x64": {
+      "name": "@ax/target-mocking-linux-x64",
+      "version": "5.2.6",
+      "integrity": "sha512-QCt4WCGeKJm30d2up4t05CyOdouNcw6O7Rct9nPfL/SEHZDzu4XOqH8FloBv+gWMmXMe8GqlLSoHLunzxYb8xw==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-linux-x64/-/target-mocking-linux-x64-5.2.6.tgz",
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "dependencies": {}
+    },
+    "@ax/target-mocking-win-x64": {
+      "name": "@ax/target-mocking-win-x64",
+      "version": "5.2.6",
+      "integrity": "sha512-Bbd73z5IQzdf1rVQg58yme2RyTPOAKy1miggA9WBjsmY8NUVA75M5amL/DXBbWkLsJxWVGlb4PuAwPzs/AfQnQ==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-win-x64/-/target-mocking-win-x64-5.2.6.tgz",
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "dependencies": {}
+    },
     "@ax/system-strings": {
       "name": "@ax/system-strings",
       "version": "7.0.17",
@@ -711,7 +786,8 @@
       "version": "7.0.52",
       "integrity": "sha512-iKLQAGv6Au/CsImP/RmCy0nRIUCQMjrAdgo/AmWrH3+MvPLjhowbsNSQsq1YUP34PbYI0ThH6tQjkUta2dFc7A==",
       "resolved": "https://registry.simatic-ax.siemens.io/@ax/st-docs/-/st-docs-7.0.52.tgz",
-      "dependencies": {}
+      "dependencies": {},
+      "deprecated": ""
     },
     "@ax/system-math": {
       "name": "@ax/system-math",
@@ -725,7 +801,8 @@
       "version": "7.0.17",
       "integrity": "sha512-mgB6+Ln5eLXsGJb4nl6/sW7SwAipSrFvttMWGAJMOym3qx7F1MuAdcZ6NaRS0rV0mpyyTEzgG3sk2voMN1OK1Q==",
       "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-datetime/-/system-datetime-7.0.17.tgz",
-      "dependencies": {}
+      "dependencies": {},
+      "deprecated": ""
     }
   },
   "workspaces": {}

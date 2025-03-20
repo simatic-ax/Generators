@@ -25,6 +25,8 @@ apaxVersion: 3.2.1
 devDependencies:
   "@ax/sdk": 2405.0.0
   "@simatic-ax/snippetscollection": 1.0.0
+  "@ax/axunit-mocking": ^5.2.4
+  "@simatic-ax/mocks": ^1.0.0
 dependencies:
   "@simatic-ax/io": 6.0.0
   "@ax/system-timer": 7.0.17
