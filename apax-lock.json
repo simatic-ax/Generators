@@ -12,9 +12,7 @@
     },
     "devDependencies": {
       "@ax/sdk": "2411.1.0",
-      "@simatic-ax/snippetscollection": "1.0.0",
-      "@ax/axunit-mocking": "^6.1.12",
-      "@simatic-ax/mocks": "^2.0.0"
+      "@simatic-ax/snippetscollection": "1.0.0"
     }
   },
   "packages": {
@@ -54,27 +52,6 @@
       "integrity": "sha512-8BNldIIGZuuLSiMjJxcBmHt7sL7kSlc0dss88BcrfnL/7iXPmHwhlnh4XobcVoOHXaz5f8cbMbXCUrffBIwecQ==",
       "resolved": "https://npm.pkg.github.com/download/@simatic-ax/snippetscollection/1.0.0/60302d7e0da15a914ce0126503398063a42e1917",
       "dependencies": {}
-    },
-    "@ax/axunit-mocking": {
-      "name": "@ax/axunit-mocking",
-      "version": "6.1.12",
-      "integrity": "sha512-5xdwB9zRl16Hvwcu6Mvkjy20kyM/JF8XJvESEzYN9BAunL+pi+ifR3qR3gzGCORTkPBkfgtnfWb5957PXpxukg==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/axunit-mocking/-/axunit-mocking-6.1.12.tgz",
-      "dependencies": {
-        "@ax/target-mocking": "6.1.12",
-        "@ax/mocking-library": "6.1.12",
-        "@ax/mocking-ls-contrib": "6.1.12"
-      }
-    },
-    "@simatic-ax/mocks": {
-      "name": "@simatic-ax/mocks",
-      "version": "2.0.0",
-      "integrity": "sha512-+TzW/wBM6+W/ctioSF+TCiGP/Q81Ck9H9bfnoR1Tdv8HketyBCRIVewwzvLmuuB4rcUgM1uJtO6NQGXKYz4HTg==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/mocks/2.0.0/29da144c4e0a3c07283a01bde96b91f16ae3086c",
-      "dependencies": {
-        "@ax/axunit-mocking": "^6.1.12",
-        "@ax/system-timer": "^8.0.8"
-      }
     },
     "@simatic-ax/io": {
       "name": "@simatic-ax/io",
@@ -296,30 +273,6 @@
         "@ax/trace-win-x64": "2.8.1",
         "@ax/trace-linux-x64": "2.8.1"
       }
-    },
-    "@ax/target-mocking": {
-      "name": "@ax/target-mocking",
-      "version": "6.1.12",
-      "integrity": "sha512-VzUcF7eLU5bazWzXNwbnfCd6CQ5mOQ84vvT+rJm2zVqMc+CVaWGEuNvOKJ+s88cPgx3XG/vGa3pS9FAg8pND2g==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking/-/target-mocking-6.1.12.tgz",
-      "dependencies": {
-        "@ax/target-mocking-linux-x64": "6.1.12",
-        "@ax/target-mocking-win-x64": "6.1.12"
-      }
-    },
-    "@ax/mocking-library": {
-      "name": "@ax/mocking-library",
-      "version": "6.1.12",
-      "integrity": "sha512-ZSyVLlChnUsvonuXj7IamCVanh7LCSTvalPr0YrhcQlAQaGWCAqoI0G2fFLKQ5/QZDPsLtxrXmZFhKHwCyaxvA==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/mocking-library/-/mocking-library-6.1.12.tgz",
-      "dependencies": {}
-    },
-    "@ax/mocking-ls-contrib": {
-      "name": "@ax/mocking-ls-contrib",
-      "version": "6.1.12",
-      "integrity": "sha512-g8+lSj8dxtBqyTMEo0koVs5Iv8/5nQWbv9todrnIOqqFjVrCeRjvP3wkN/0Ln/lWb7tyLG3ADtSccs/J/uk6GA==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/mocking-ls-contrib/-/mocking-ls-contrib-6.1.12.tgz",
-      "dependencies": {}
     },
     "@ax/system-math": {
       "name": "@ax/system-math",
@@ -700,32 +653,6 @@
       "resolved": "https://registry.simatic-ax.siemens.io/@ax/trace-linux-x64/-/trace-linux-x64-2.8.1.tgz",
       "os": [
         "linux"
-      ],
-      "cpu": [
-        "x64"
-      ],
-      "dependencies": {}
-    },
-    "@ax/target-mocking-linux-x64": {
-      "name": "@ax/target-mocking-linux-x64",
-      "version": "6.1.12",
-      "integrity": "sha512-KKfUoODuj51Q8oTWqgmHy0CGAdG2ZJaiJvhBRfzbwRnfK+Ey80nAhwM4KH1/1brS3sp0lwVIN94pe8khKgD43A==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-linux-x64/-/target-mocking-linux-x64-6.1.12.tgz",
-      "os": [
-        "linux"
-      ],
-      "cpu": [
-        "x64"
-      ],
-      "dependencies": {}
-    },
-    "@ax/target-mocking-win-x64": {
-      "name": "@ax/target-mocking-win-x64",
-      "version": "6.1.12",
-      "integrity": "sha512-B/v6F+lP2Y97kXTKAz17zy00VV7JiEeq/ruAKYTnnflXhJLP6kxjjUr1zIK0MVZf3DDsvWocvBHqJ69h+OUorg==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/target-mocking-win-x64/-/target-mocking-win-x64-6.1.12.tgz",
-      "os": [
-        "win32"
       ],
       "cpu": [
         "x64"
