@@ -5,7 +5,7 @@ NAMESPACE Simatic.Ax.Generators
 
     {axcode:docs-v0:@simatic-ax/generators:PulseGenerator.md}
     CLASS PulseGenerator
-        IMPLEMENTS IBinSignal
+        IMPLEMENTS ItfBinSignal
         VAR PUBLIC
             PulseTime : LTIME := T#1s; // Pulse duration
             PauseTime : LTIME := T#1s; // Pause duration ( PulseTime + PauseTime = Period )
