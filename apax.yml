@@ -38,4 +38,3 @@ files:
   - 'snippets'
   - 'docs'
   - 'src' # ship library as src-files
-  # - 'bin'    # ship library as bin-files
