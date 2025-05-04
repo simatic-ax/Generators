@@ -25,11 +25,11 @@ apaxVersion: 3.2.1
 devDependencies:
   "@ax/sdk": 2411.2.0
   "@simatic-ax/snippetscollection": 1.0.0
-  # "@ax/axunit-mocking": ^6.1.12
+  # "@ax/axunit-mocking": ^8.0.0
   # "@simatic-ax/mocks": ^2.0.0
 dependencies:
   "@simatic-ax/io": ^8.0.0
-  "@ax/system-timer": ^8.0.7
+  "@ax/system-timer": ^10.0.0
 # Files which 'apax pack' will include
 files:
   - 'README.md'
