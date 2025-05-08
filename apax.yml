@@ -23,13 +23,13 @@ installStrategy: strict
 apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2411.2.0
+  "@ax/sdk": ^2504.0.0
   "@simatic-ax/snippetscollection": 1.0.0
   # "@ax/axunit-mocking": ^6.1.12
   # "@simatic-ax/mocks": ^2.0.0
 dependencies:
-  "@simatic-ax/io": ^8.0.0
-  "@ax/system-timer": ^8.0.7
+  "@simatic-ax/io": ^9.0.0
+  "@ax/system-timer": ^10.0.24
 # Files which 'apax pack' will include
 files:
   - 'README.md'
@@ -38,3 +38,5 @@ files:
   - 'snippets'
   - 'docs'
   - 'src' # ship library as src-files
+catalogs:
+  "@ax/simatic-ax": ^2504.0.0
