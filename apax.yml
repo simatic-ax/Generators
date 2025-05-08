@@ -21,7 +21,7 @@ targets:
 # Dependencies
 devDependencies:
   "@ax/sdk": ^2504.0.0
-  "@simatic-ax/snippetscollection": 1.0.0
+  "@simatic-ax/snippetscollection": ^1.0.0
   # "@ax/axunit-mocking": ^6.1.12
   # "@simatic-ax/mocks": ^2.0.0
 dependencies:
