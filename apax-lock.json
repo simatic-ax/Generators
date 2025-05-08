@@ -12,7 +12,7 @@
     },
     "devDependencies": {
       "@ax/sdk": "^2504.0.0",
-      "@simatic-ax/snippetscollection": "1.0.0"
+      "@simatic-ax/snippetscollection": "^1.0.0"
     },
     "catalogs": {
       "@ax/simatic-ax": "^2504.0.0"
