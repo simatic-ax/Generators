@@ -8,7 +8,7 @@ description: This library contains a collection of signal generators
 repository:
   type: git
   url: https://github.com/simatic-ax/generators
-  
+
 # Environment variables
 variables:
   APAX_BUILD_ARGS:
@@ -19,13 +19,15 @@ targets:
 # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
-  
+
 # Dependencies
 catalogs:
   "@ax/simatic-ax": ^2504.0.0
 devDependencies:
   "@ax/sdk": ^2504.0.0
   "@simatic-ax/snippetscollection": ^1.0.0
+  "@ax/axunit-mocking": ^8.0.33
+  # "@simatic-ax/mocks": ^3.0.0
 dependencies:
   "@simatic-ax/io": ^9.0.0
   "@ax/system-timer": ^10.0.24
