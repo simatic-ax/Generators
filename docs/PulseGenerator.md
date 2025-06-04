@@ -34,9 +34,9 @@ Example configuration in a VAR section
 |||
 |-|-|
 | Execute() | Execute the clock signal. Must called cycically |
-| Clock() : BOOL | Returns the clock signal |
-| ClockRis() : BOOL | Returns the rising edge of the clock signal |
-| ClockFal() : BOOL | Returns the falling edge of the clock signal |
+| Q() : BOOL | Returns the clock signal |
+| QRis() : BOOL | Returns the rising edge of the clock signal |
+| QFal() : BOOL | Returns the falling edge of the clock signal |
 
 ## Example
 
@@ -62,7 +62,7 @@ PROGRAM MainProgram
     END_VAR
 
     clock.Execute();
-    clk := clock.Clock();
+    clk := clock.Q();
       
 END_PROGRAM
 ```
