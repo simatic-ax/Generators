@@ -2,22 +2,36 @@ NAMESPACE Simatic.Ax.Mocks
     /// This Mock can be used in Classes/FunctionBlocks where are two OnDelay instances are used
     {axcode:docs-v0:@simatic-ax/generators:OnDelayMockWithTwoTimers.md}
     FUNCTION_BLOCK OnDelayMock2Timer
-        VAR
-            iecTimer : ARRAY[0..27] of BYTE;
-        END_VAR
         VAR_INPUT
-            duration : LTIME;
-            signal : BOOL;
+            /// Signal to be monitored.
+            signal: BOOL;
+            /// Duration of the delay.
+            duration: LTIME;
         END_VAR
+
         VAR_OUTPUT
-            output : BOOL;
-            elapsedTime : LTIME;
+            /// Operand that is set after the delay.
+            output: BOOL;
+            /// Current elapsed time.
+            elapsedTime: LTIME;
+        END_VAR
+
+        VAR PRIVATE
+            risingEdge: BOOL;
+            previousSignal: BOOL;
+            startTime: LTIME;
+            currentDuration: LTIME;
+        END_VAR
+
+        VAR INTERNAL
+            reset: BOOL := FALSE;
+            preset: BOOL := FALSE;
+            presetDuration: LTIME := LT#0ns;
         END_VAR
         VAR_TEMP
             state : REF_TO OnDelayMockState;
         END_VAR
-        VAR PRIVATE
-        END_VAR
+
         state ?= AxUnit.Mocking.GetPayload();
         output := TRUE;
 

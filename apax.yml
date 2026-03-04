@@ -3,7 +3,7 @@ name: '@simatic-ax/generators'
 version: 0.0.0-placeholder
 type: lib
 # Description will be displayed in the apax extension
-description: This library contains a collection of signal generators
+description: "Library containing a collection of signal generators including PulseGenerator for ST programming"
 #URL to the repository
 repository:
   type: git
@@ -14,23 +14,27 @@ variables:
   APAX_BUILD_ARGS:
     - '--debug'
 targets:
-  - '1500'
   - 'llvm'
+  - '1500'
+
+publicKeys:
+  "@simatic-ax":
+    "v1": "3792a7e926775425ccdd29ceed8c368c3008b5b33d7d5550b3cb1f58093e1dff"
+    "v2": "7af3e394eb2b285a3d99ab8e1f745cc6db75704b30a80393339c721a92ffffd9"
+
 # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 
 # Dependencies
-catalogs:
-  "@ax/simatic-ax": ^2504.0.0
+
 devDependencies:
-  "@ax/sdk": ^2504.0.0
-  "@simatic-ax/snippetscollection": ^1.0.0
-  "@ax/axunit-mocking": ^8.0.33
-  # "@simatic-ax/mocks": ^3.0.0
+  "@ax/sdk": ^2510.0.0
+  "@simatic-ax/snippetscollection": ^1.1.0
+  "@ax/axunit-mocking": ^8.4.20
 dependencies:
-  "@simatic-ax/io": ^9.0.0
-  "@ax/system-timer": ^10.0.24
+  "@simatic-ax/io": ^10.0.1
+  "@ax/system-timer": ^10.2.7
 # Files which 'apax pack' will include
 files:
   - 'README.md'
