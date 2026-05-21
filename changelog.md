@@ -1,13 +1,19 @@
 # Changelog
 
-## 2022-06-21
+## [Unreleased]
 
-Version 0.0.1
+### Changed
 
-- First Version
+- Rename `ItfBinSignal` to `IBinSignal` to align with @simatic-ax/io v11 breaking change
 
-## 2022-06-22
+## [0.0.3] - 2022-06-22
 
-Version 0.0.3
+### Added
 
 - Add docu link to PulseGenerator
+
+## [0.0.1] - 2022-06-21
+
+### Added
+
+- First Version
