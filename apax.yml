@@ -31,7 +31,7 @@ registries:
 devDependencies:
   "@ax/sdk": ^2510.0.0
   "@simatic-ax/snippetscollection": ^1.1.0
-  "@ax/axunit-mocking": ^9.0.0
+  "@ax/axunit-mocking": ^8.4.20
 dependencies:
   "@simatic-ax/io": ^11.0.0
   "@ax/system-timer": ^10.2.7
@@ -43,3 +43,5 @@ files:
   - 'snippets'
   - 'docs'
   - 'bin'
+catalogs:
+  "@ax/simatic-ax": 2510.0.0
