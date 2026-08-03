@@ -16,18 +16,6 @@ NAMESPACE Simatic.Ax.Mocks
             elapsedTime: LTIME;
         END_VAR
 
-        VAR PRIVATE
-            risingEdge: BOOL;
-            previousSignal: BOOL;
-            startTime: LTIME;
-            currentDuration: LTIME;
-        END_VAR
-
-        VAR INTERNAL
-            reset: BOOL := FALSE;
-            preset: BOOL := FALSE;
-            presetDuration: LTIME := LT#0ns;
-        END_VAR
         VAR_TEMP
             state : REF_TO OnDelayMockState;
         END_VAR

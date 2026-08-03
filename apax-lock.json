@@ -7,7 +7,7 @@
     "name": "@simatic-ax/generators",
     "version": "0.0.0-placeholder",
     "dependencies": {
-      "@simatic-ax/io": "^10.0.1",
+      "@simatic-ax/io": "^11.0.0",
       "@ax/system-timer": "^10.2.7"
     },
     "devDependencies": {
@@ -778,9 +778,9 @@
     },
     "@simatic-ax/io": {
       "name": "@simatic-ax/io",
-      "version": "10.0.1",
-      "integrity": "sha512-by9/1chsUqPIjPGKt9xk2WqJe1WhzBlerIqoxY4R+NwcgKE3QXxi1SiqXLRYCrB1TE427j992VGJukZIH9WS3Q==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/io/10.0.1/9c4b3c262176c6374949c37dd764341aa196adf0",
+      "version": "11.0.0",
+      "integrity": "sha512-S4yuFXXIEfv9QIbFS6JWDBCA+VMkZ/v2WorLDAaWzCtjL6pNDqvZClqkJ7ssXIA3Tntbe0PWPZOgChHJObyTYw==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/io/11.0.0/a6376e04d2d39c555f1a546f0b513aaacf924f3d",
       "dependencies": {
         "@ax/system-math": "^10.2.7",
         "@ax/system-timer": "^10.2.7"

@@ -33,7 +33,7 @@ devDependencies:
   "@simatic-ax/snippetscollection": ^1.1.0
   "@ax/axunit-mocking": ^9.0.0
 dependencies:
-  "@simatic-ax/io": ^10.0.1
+  "@simatic-ax/io": ^11.0.0
   "@ax/system-timer": ^10.2.7
 # Files which 'apax pack' will include
 files:
